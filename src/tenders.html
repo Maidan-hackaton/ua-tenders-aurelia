@@ -1,0 +1,10 @@
+<template>
+    <section>
+        <h2>${heading}</h2>
+        <div class="row">
+        <div class="col-sm-6 col-md-3" repeat.for="tender of tenders">
+          <a href.bind="tender.href">${tender.title}</a>
+        </div>
+        </div>
+    </section>
+</template>
